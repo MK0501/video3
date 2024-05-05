@@ -3,14 +3,22 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { ThumbnailComponent } from './thumbnail/thumbnail.component';
+import { PlayerComponent } from './player/player.component';
+import { FormsModule } from '@angular/forms';
+import { DisableforwardseekingDirective } from './disableforwardseeking.directive';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ThumbnailComponent,
+    PlayerComponent,
+    DisableforwardseekingDirective
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

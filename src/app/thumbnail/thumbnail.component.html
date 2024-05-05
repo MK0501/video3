@@ -1,0 +1,26 @@
+
+
+<h1 style="color: blue; text-decoration: underline;" >
+<div #btnValue1 data-value="video1" (click)="fn(btnValue1.getAttribute('data-value'))" (click)="selectNewVideo(v1)">
+    <span style="cursor: pointer;">video1
+    <input type="checkbox" disabled="kv1.ended"></span></div>
+<div #btnValue2 data-value="video2" (click)="fn(btnValue2.getAttribute('data-value'))" (click)="selectNewVideo(v2)">
+    <span style="cursor: pointer;">video2 
+    <input type="checkbox" disabled></span></div>
+<div #btnValue3 data-value="video3" (click)="fn(btnValue3.getAttribute('data-value'))" (click)="selectNewVideo(v3)">
+    <span style="cursor: pointer;">video3
+    <input type="checkbox" disabled></span></div></h1>
+
+<br>
+
+<video #v1 id="video1" controls controlsList="nodownload disablePictureInPicture noplaybackrate" appDisableforwardseeking [hidden]="video1" width="300"height="250" class="row">
+    <source src="/assets/videos/istockphoto-1371801392-640_adpp_is.mp4">
+</video>
+<video #v2 id="video2" controls controlsList="nodownload disablePictureInPicture noplaybackrate" appDisableforwardseeking [hidden]="video2" width="300"height="250" class="row">
+    <source src="/assets/videos/matt_devir--one_minute_drive.mp4">
+</video>
+<video #v3 id="video3" controls controlsList="nodownload disablePictureInPicture noplaybackrate" appDisableforwardseeking [hidden]="video3" width="300"height="250" class="row">
+    <source src="/assets/videos/see-ming_lee--everchanging_cloudscape.mp4">
+</video>
+
+
